@@ -1,0 +1,13 @@
+{
+  "name": "aiet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gautam.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gautam": "my name is gautam kumar jaiswal",
+    "triloki": "my father naam is triloki sah"
+  },
+  "author": "",
+  "license": "ISC"
+}

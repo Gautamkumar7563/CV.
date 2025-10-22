@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(
+    123deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(143, 85, 224, 1) 0%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden; /* prevent scroll during animation */
+}
+
+/* ----------------- NAVBAR ---------------- */
+.nevbar {
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(
+    132deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 89%
+  );
+}
+
+.nev {
+  display: flex;
+}
+
+.logo {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.button {
+  display: flex;
+  justify-content: end;
+  margin-left: 56%;
+}
+
+.button p {
+  margin-left: 28px;
+  font-weight: 900;
+  margin-top: 5px;
+  color: #222;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.button p:hover {
+  color: #ff4c68;
+  transform: scale(1.1);
+}
+
+/* ----------------- MAIN CONTENT ---------------- */
+.title {
+  margin-top: 150px;
+  margin-left: 150px;
+  font-size: small;
+  color: rgb(255, 255, 255);
+}
+
+/* name and image container */
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* TEXT ANIMATION (from left) */
+.name1 {
+  font-size: x-large;
+  color: white;
+  opacity: 0;
+  transform: translateX(-150px);
+  animation: slideInLeft 1.2s ease forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* IMAGE ANIMATION (from right) */
+.img1 {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  opacity: 0;
+  transform: translateX(150px);
+  animation: slideInRight 1.2s ease forwards;
+  animation-delay: 0.3s; /* start after text */
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* name highlight */
+.ga {
+  color: yellow;
+}
+
+/* ----------------- BUTTONS ---------------- */
+.button2 {
+  text-align: center;
+  margin-top: 25px;
+  
+}
+
+
+
+.hireme,
+.downloadcv {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.4s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.hireme:hover,
+.hireme:focus {
+  background-color: #ff4c68;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 99, 132, 0.6);
+}
+
+.downloadcv:hover,
+.downloadcv:focus {
+  background-color: #4cc9f0;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(76, 201, 240, 0.6);
+}
