@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background: linear-gradient(
@@ -11,7 +14,7 @@ body {
     rgba(252, 176, 69, 1) 100%
   );
   font-family: Arial, Helvetica, sans-serif;
-  overflow-x: hidden; /* prevent scroll during animation */
+  overflow-x: ; /* prevent scroll during animation */
 }
 
 /* ----------------- NAVBAR ---------------- */
@@ -154,4 +157,39 @@ body {
   color: white;
   transform: scale(1.05);
   box-shadow: 0 0 15px rgba(76, 201, 240, 0.6);
+}
+
+
+            /* About me */
+
+.about{
+  height: 600px;
+  display: flex;
+  
+}
+
+.gautamphoto img{
+   height: 450px;
+   margin-left: 130px;
+   margin-top: 50px;
+   border-radius: 10px;
+  
+  background-color: white;
+  box-shadow: 0 0 55px 5px rgba(0,0,0,0.4);;
+   opacity: 0;
+   transform: translateY(-150px);
+   animation: slideInLeft 1.2s ease forwards;
+   animation-delay: 0.3s;
+}
+
+.gautamabout{
+  margin-top: 80px;
+  margin-left: 50px;
+}
+
+.gautamabout p{
+font-size: 18px;
+
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  
 }
